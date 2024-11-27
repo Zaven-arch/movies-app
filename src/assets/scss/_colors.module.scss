@@ -1,0 +1,26 @@
+$colors: (
+  appWhite: #ffffff,
+  appMediumGray: #8c8c8c,
+  appMediumGrayLight: #b8b8b8,
+  appGrayLight: #d3d3d3,
+  appGray: #a1a1a1,
+  appSpringGreen: #c7f28b,
+  appSpringGreenLight: #a3c376,
+  appGreenLight: #dcfeae,
+  appDustyGreen: #6b8250,
+  appSalmonPink: #f28b8b,
+  appSalmonPinkLight: #f9abab,
+  appSalmonPinkDark: #d37d7d,
+  appDustyRose: #804e51,
+  appBabyBlue: #acdde7,
+  appDustyBlue: #729fa9,
+  appCharcoalGray: #26282e,
+  appMidnightBlue: #1a1c22,
+  appSpaceBlack: #0f1116,
+);
+
+:export {
+  @each $key, $value in $colors {
+    #{$key}: $value;
+  }
+}

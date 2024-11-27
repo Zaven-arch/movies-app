@@ -1,0 +1,26 @@
+@use '_colors.module.scss';
+
+@layer base {
+  :root {
+    @each $key, $value in colors.$colors {
+      --#{$key}: #{$value};
+    }
+  }
+
+  .custom-overflow {
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+      width: 2px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: var(--appMediumGray);
+      border: solid 3px var(--appMediumGray);
+      border-radius: 7px;
+
+      &:hover {
+        background: var(--appWhite);
+      }
+    }
+  }
+}
